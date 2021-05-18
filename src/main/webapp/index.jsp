@@ -55,7 +55,7 @@
 					<div class="text-3">
 						And I'm a <span class="typing"></span>
 					</div>
-					<a href="#">Hire me</a>
+					<a href="#contact">Hire me</a>
 				</div>
 			</div>
 		</div>
@@ -67,21 +67,33 @@
 			<h2 class="title">About me</h2>
 			<div class="about-content">
 				<div class="column left">
-					<img src="images/profile-1.jpeg" alt="">
+					<img src="images/logo-ucsal.png" alt="Catholic University of Salvador Logo">
+					<img src="images/java-logo.png" alt="Java Vintage Cup Logo">
 				</div>
 				<div class="column right">
 					<div class="text">
 						I'm Carlos and I'm a <span class="typing-2"></span>
 					</div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit
-						laboriosam voluptatem nisi delectus. Facere explicabo hic minus
-						accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio
-						consequatur ipsam possimus veritatis, placeat, ab molestiae velit
-						inventore exercitationem consequuntur blanditiis omnis beatae.
-						Dolor iste excepturi ratione soluta quas culpa voluptatum
-						repudiandae harum non.</p>
-					<a href="#">Download CV</a>
+					<p>I am currently a Sophomore Student of Software Engineering at the Catholic University of Salvador (UCSAL). 
+					   This specific Course is well-known for its heavily-focused Teaching Guidelines directed towards at Java Development. 
+					   Most of my Subjects are taught in Java, and most of my Tests and Team Projects require it too! This has brought me a 
+					   lot of experience and self-confidence on designing and building Back End/Full Stack applications during my Undergrad 
+					   course up to now. </p>
+					<p>In this sense, besides my Core Undergrad, I have been studying a lot of specific topics through Online Courses,
+					   Events, Tutorials, Internships, Hackathons and Bootcamps, and much more. During my daily coding studies, I have enhanced 
+					   and shaped meaningful and practical knowledge at subjects such as Web Development, Data Base Operations, API management,
+					   Coding Standards and Best Practices, Agile Team Development, Business Modeling, et cetera.</p>
+					<p>In parallel to this daily schedule, I have always been in contact with Innovative Environments and Initiatives.
+					   Since Entrepreneurship and Innovation are some of my greatest passions, I and two other friends have idealized the "Scupp!",
+					   a social networking concept for "Breaking the Ice" at First-Contact Conversations. Thanks to Scupp!, I have been imerged in a
+					   daily basis at my now Natural Habitat - the Startup Environment. Either through Partners, Mentors, or Team Assignments and
+					   Mentorship Programs, I realized once for all that Coding, Tech and Innovation are my main Passions. Imerged in them, I see
+					   my hours flying, and easily spend my morning, evenings and nights coding without much effort. This is me, and this is what i love to do! </p>
+				    
+				    <p>That being said, all of these past and present backgrounds were more thoroughly depicted at my CV, with Demo 
+				       Independent Projects and further Academic Information. </p>   
+					<a href="https://carloslaurine.github.io/" target="_blank">Visit my Name Card</a>
+					<a href="https://carloslaurine.github.io/" target="_blank">Upload my Portfolio</a>
 				</div>
 			</div>
 		</div>
@@ -92,33 +104,48 @@
 		<div class="max-width">
 			<h2 class="title">My services</h2>
 			<div class="serv-content">
-				<div class="card">
+			
+			 	<div class="card">
 					<div class="box">
-						<i class="fas fa-paint-brush"></i>
-						<div class="text">Web Design</div>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Rem quia sunt, quasi quo illo enim.</p>
+						<i class="fas fa-chart-line"></i>
+						<div class="text">Web Development</div>
+						<p>I have been developing independent Java Web Projects, with knowledge in HTTP Protocol, JS Validations and Webservices with Ajax. The respective Back End's Builds vary from Maven to Spring Boot Projects, and also encompass JDBC, JPA and Hibernate along with various Java APIs and Libraries</p>
 					</div>
 				</div>
 				<div class="card">
 					<div class="box">
-						<i class="fas fa-chart-line"></i>
-						<div class="text">Advertising</div>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Rem quia sunt, quasi quo illo enim.</p>
+						<i class="fas fa-paint-brush"></i>
+						<div class="text">Web Layouts</div>
+						<p>Even though my focus is on Back End, I am also developing some WebApps' respective Interfaces. In this sense, I mainly
+						give HTML/CSS/JS maintenance at some independent pages, specially at my Tech Startup's (Scupp!) Landing Page. It's Link/Code Repo is available at my Resume for further Code/Layout display</p>
+
 					</div>
 				</div>
 				<div class="card">
 					<div class="box">
 						<i class="fas fa-code"></i>
-						<div class="text">Apps Design</div>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Rem quia sunt, quasi quo illo enim.</p>
+						<div class="text">Full Stack Notions</div>
+						<p>I am currently enrolled in several Projects, Studies and a Bootcamp directed towards full Web Development with Spring Boot for the Back End Server-Side Layers, ReactJS and Bootstrap for the View Layer at MVC Architecture, and MySQL/PostgreSQL for the DataBase Persistence Management</p>
 					</div>
 				</div>
-			</div>
+				<div class="card" style="margin-top:2.1em;">
+					
+				</div>
+				
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<i class="fas fa-chart-line"></i>
+						<div class="text">Web Apps Hosting and Deployment</div>
+						<p>In order to build my Online Portfolio, I have acquired some hands-on, meaningful experience on Deployment and Hosting of WebApps and their respective Databases (MySQL/PostgreSQL) with Heroku, Netlify and CPanel (through MochaHost).  </p>
+					</div>
+				</div>
+				<div class="card" style="margin-top:2.1em;">
+					
+				</div>
+				
+			</div>	
 		</div>
-		</div>
+		
 	</section>
 
 	<!-- skills section start -->
@@ -128,13 +155,8 @@
 			<div class="skills-content">
 				<div class="column left">
 					<div class="text">My Creative Skills & Experiences.</div>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Dignissimos, ratione error est recusandae consequatur, iusto illum
-						deleniti quidem impedit, quos quaerat quis minima sequi.
-						Cupiditate recusandae laudantium esse, harum animi aspernatur
-						quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem
-						illum. Ad delectus natus aut hic explicabo minus quod.</p>
-					<a href="https://carloslaurine.github.io/" target="_blank">Visit my Name Card!</a>
+					<p>The following are some of the Technologies and Languages that I have been in contact with during my Studies and Independent Applications/Code Development path. If you prefer, you can see all of my hands-on practices in my Repositories at my GitHub Page. The great majority of the Codes and Apps there have intentional, deep detailed Development Comments along each section of the the respective Source Codes in order to display properly each one of the Dev Technologies, Languages and Tactics explored.</p>
+					<a href="https://github.com/CarlosLaurine" target="_blank">Visit my GitHub Profile!</a>
 				</div>
 				<div class="column right">
 					<div class="bars">
@@ -214,6 +236,7 @@
 				</div>
 			</div>
 		</div>
+		</div>
 	</section>
 
 	<!-- contact section start -->
@@ -223,9 +246,7 @@
 			<div class="contact-content">
 				<div class="column left">
 					<div class="text">Get in Touch</div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
-						nesciunt veritatis vitae nobis?</p>
+					<p>Please feel free to contact me through my mailbox using the "Message Me" section right here, or to use my personal info below to reach out to me in the best way possible. You can also get a Custom Mail with some Additional Info Links from me by fulfilling the last section on the right with your Name and E-mail! It's as easy as that!</p>
 					<div class="icons">
 						<div class="row">
 							<i class="fas fa-user"></i>
@@ -242,6 +263,13 @@
 							</div>
 						</div>
 						<div class="row">
+							<i class="fas fa-user"></i>
+							<div class="info">
+								<div class="head">Phone</div>
+								<div class="sub-title">+55 (71) 99318-7816</div>
+							</div>
+						</div>
+						<div class="row">
 							<i class="fas fa-envelope"></i>
 							<div class="info">
 								<div class="head">Email</div>
@@ -250,7 +278,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="column right">
+				<div class="column right" style="margin-top: -6em;">
 					<div class="text">Message Me</div>
 					<form class="contact-form" action="mailInfo?action=send"
 						method="post">
@@ -275,14 +303,14 @@
 						</div>
 						<div class="button-area">
 							<button class="send-msg" type="submit" name="send">Send
-								Message</button>
+								Mail</button>
 						</div>
 					</form>
 				</div>
 			</div>
 
 
-			<div class="contact-content">
+			<div class="contact-content" style="margin-top: -7em;">
 				<div class="column left"></div>
 				<div class="column right" style="float: both">
 					<div class="text">Get a Custom E-mail from Me</div>
@@ -300,8 +328,8 @@
 							</div>
 						</div>
 						<div class="button-area">
-							<button class="send-msg" type="submit" name="send">Send
-								Message</button>
+							<button class="send-msg" type="submit" name="send">Get
+								Mail</button>
 						</div>
 					</form>
 				</div>
@@ -314,7 +342,7 @@
 	</div>
 
 	<span
-		style="font-style: italic; font-size: 14px; font-weight: 50%; font-family: 'Poppins', sans-serif; text-align: center; bottom: 0; display: block; margin-bottom: -5em;">All
+		style="font-style: italic; font-size: 14px; font-weight: 50%; font-family: 'Poppins', sans-serif; text-align: center; display: block; margin-bottom: 2em;">All
 		Rights Reserved</span>
 
 

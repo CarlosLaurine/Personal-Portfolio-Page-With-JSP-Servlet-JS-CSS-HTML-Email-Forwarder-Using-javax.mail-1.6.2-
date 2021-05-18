@@ -1,5 +1,8 @@
 package email_forwarder;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Properties;
 
 import javax.mail.Address;
@@ -10,6 +13,10 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
 
 public class EmailForwarder {
 
@@ -102,5 +109,33 @@ public class EmailForwarder {
 		Transport.send(msg);
 
 	}
+	
+	/*
+	 * The following method simulates a PDF or any other file that can be sent as an
+	 * attachment at the JavaMail. For instance, the file can be get through a
+	 * DataBase in Base 64, can be a byte[], or a File Stream. It can be in a
+	 * Database or in a Folder
+	 * 
+	 * OBS: The Method returns a Blank PDF with the Text from the Demo Paragraph
+	 * hardcode-inserted below
+	 */
 
+	private FileInputStream pdfSimulator() throws Exception {
+
+		Document doc = new Document();
+		File file = new File("attachedFile.pdf");
+		file.createNewFile();
+		PdfWriter.getInstance(doc, new FileOutputStream(file));
+		doc.open();
+		doc.add(new Paragraph(
+				"Content from the PDF attached through JavaMail, this Paragraph is from the PDF Document"));
+		doc.close();
+
+		// Returning the Blank PDF with the Text from the Demo Paragraph
+		// in Byte Stream form to be Read and Converted at sendEmail
+
+		return new FileInputStream(file);
+
+	}
+	
 }

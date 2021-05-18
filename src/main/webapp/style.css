@@ -305,7 +305,7 @@ section .title::after {
 
 .services .title::after, .teams .title::after {
 	background: #111;
-	content: "what i provide";
+	content: "What do I do";
 }
 
 .services .serv-content .card {
@@ -622,6 +622,7 @@ section .title::after {
 	color:  #D4AF37;;
 	background: none;
 }
+
 
 /* This is the class used for the footer */
 .footer {
