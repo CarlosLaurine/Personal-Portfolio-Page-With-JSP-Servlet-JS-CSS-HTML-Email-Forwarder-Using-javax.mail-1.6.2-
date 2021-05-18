@@ -93,7 +93,7 @@
 				    <p>That being said, all of these past and present backgrounds were more thoroughly depicted at my CV, with Demo 
 				       Independent Projects and further Academic Information. </p>   
 					<a href="https://carloslaurine.github.io/" target="_blank">Visit my Name Card</a>
-					<a href="https://carloslaurine.github.io/" target="_blank">Upload my Portfolio</a>
+					<a href="DemoContactsListFile.pdf" download="Carlos Laurine Dev (Resume/Portfolio)" target="_blank">Upload my Portfolio</a>
 				</div>
 			</div>
 		</div>
