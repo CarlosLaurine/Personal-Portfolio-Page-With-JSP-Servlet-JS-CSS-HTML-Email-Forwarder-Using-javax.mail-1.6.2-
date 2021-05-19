@@ -2,15 +2,17 @@
 	pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carlos Laurine Personal Portfolio Website</title>
+<title>Carlos Laurine Dev Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	
+<link rel="icon" href="images/java-icon3.jpg">
+	
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -29,7 +31,7 @@
 	<nav class="navbar">
 		<div class="max-width">
 			<div class="logo">
-				<a href="#">Portfo<span>lio.</span></a>
+				<a href="#">Portfo<span>lio</span></a>
 			</div>
 			<div class="menu" style="text-align: center; color:#FFF; color: crimson;font-size: 18px;font-weight: 500; line-height: 24px;background:rgb(229, 252, 252); padding:1.5em; border-radius: 1.5em; font-family: 'Poppins', sans-serif;"><%= (request.getAttribute("mailMsg")==null)?"":request.getAttribute("mailMsg") %></div>
 			<ul class="menu">
@@ -38,6 +40,7 @@
 				<li><a href="#services" class="menu-btn">Services</a></li>
 				<li><a href="#skills" class="menu-btn">Skills</a></li>
 				<li><a href="#contact" class="menu-btn">Contact</a></li>
+				<li><a href="#projects" class="menu-btn">Projects</a></li>
 			</ul>
 			<div class="menu-btn">
 				<i class="fas fa-bars"></i>
@@ -67,7 +70,7 @@
 			<h2 class="title">About me</h2>
 			<div class="about-content">
 				<div class="column left">
-					<img src="images/logo-ucsal.png" alt="Catholic University of Salvador Logo">
+					<img src="images/logo-ucsal.png" alt="Catholic University of Salvador Logo" style="margin-top: -2em; margin-bottom: 3em;">
 					<img src="images/java-logo.png" alt="Java Vintage Cup Logo">
 				</div>
 				<div class="column right">
@@ -79,21 +82,29 @@
 					   Most of my Subjects are taught in Java, and most of my Tests and Team Projects require it too! This has brought me a 
 					   lot of experience and self-confidence on designing and building Back End/Full Stack applications during my Undergrad 
 					   course up to now. </p>
+					   
+					   <br/>
+					   
 					<p>In this sense, besides my Core Undergrad, I have been studying a lot of specific topics through Online Courses,
 					   Events, Tutorials, Internships, Hackathons and Bootcamps, and much more. During my daily coding studies, I have enhanced 
 					   and shaped meaningful and practical knowledge at subjects such as Web Development, Data Base Operations, API management,
 					   Coding Standards and Best Practices, Agile Team Development, Business Modeling, et cetera.</p>
+					
+					<br/>
+					
 					<p>In parallel to this daily schedule, I have always been in contact with Innovative Environments and Initiatives.
 					   Since Entrepreneurship and Innovation are some of my greatest passions, I and two other friends have idealized the "Scupp!",
 					   a social networking concept for "Breaking the Ice" at First-Contact Conversations. Thanks to Scupp!, I have been imerged in a
 					   daily basis at my now Natural Habitat - the Startup Environment. Either through Partners, Mentors, or Team Assignments and
-					   Mentorship Programs, I realized once for all that Coding, Tech and Innovation are my main Passions. Imerged in them, I see
-					   my hours flying, and easily spend my morning, evenings and nights coding without much effort. This is me, and this is what i love to do! </p>
+					   Mentorship Programs, I realized once for all that Coding, Tech and Innovation are my main Passions. While imerged in them, I see
+					   my hours flying and easily spend my morning, evenings and nights coding without much effort. This defines me, and this is what I love to do! </p>
+				    
+				    <br/>
 				    
 				    <p>That being said, all of these past and present backgrounds were more thoroughly depicted at my CV, with Demo 
 				       Independent Projects and further Academic Information. </p>   
 					<a href="https://carloslaurine.github.io/" target="_blank">Visit my Name Card</a>
-					<a href="DemoContactsListFile.pdf" download="Carlos Laurine Dev (Resume/Portfolio)" target="_blank">Upload my Portfolio</a>
+					<a href="DemoContactsListFile.pdf" download="Carlos Laurine Dev (Resume/Portfolio)" target="_blank">Download my CV</a>
 				</div>
 			</div>
 		</div>
@@ -336,14 +347,68 @@
 			</div>
 		</div>
 	</section>
+	
+	<span class="projects" id="projects"></span>
+	
+	<!-- projects section start -->
+	<section class="services" id="services">
+		<div class="max-width">
+			<h2 class="title">My Projects</h2>
+			<div class="serv-content">
+		
+				
+
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+					</div>
+				</div>	
+				
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+					</div>
+				</div>
+				
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<div class="text"><a href=#contact style="color: #FFF">Personal Portfolio Full Back End + Styling / Front End Maintenance</a></div>
+					</div>
+				</div>
+				
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+			</div>	
+		</div>
+		
+	</section>
 
 	<br />
 
-	</div>
+	
 
 	<span
-		style="font-style: italic; font-size: 14px; font-weight: 50%; font-family: 'Poppins', sans-serif; text-align: center; display: block; margin-bottom: 2em;">All
-		Rights Reserved</span>
+		style="font-style: italic; font-size: 14px; font-weight: 50%; font-family: 'Poppins', sans-serif; text-align: center; display: block; margin-bottom: 1.5em;">All
+		Rights Reserved
+	</span>
 
 
 	<script src="script.js"></script>

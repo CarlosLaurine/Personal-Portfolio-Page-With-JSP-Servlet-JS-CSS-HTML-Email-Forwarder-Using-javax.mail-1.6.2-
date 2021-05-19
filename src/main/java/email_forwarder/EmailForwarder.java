@@ -109,7 +109,7 @@ public class EmailForwarder {
 		Transport.send(msg);
 
 	}
-	
+
 	/*
 	 * The following method simulates a PDF or any other file that can be sent as an
 	 * attachment at the JavaMail. For instance, the file can be get through a
@@ -137,5 +137,5 @@ public class EmailForwarder {
 		return new FileInputStream(file);
 
 	}
-	
+
 }
