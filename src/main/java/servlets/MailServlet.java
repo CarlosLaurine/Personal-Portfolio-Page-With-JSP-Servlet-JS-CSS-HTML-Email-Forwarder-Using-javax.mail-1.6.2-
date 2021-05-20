@@ -11,20 +11,45 @@ import javax.servlet.http.HttpServletResponse;
 
 import email_forwarder.EmailForwarder;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MailServlet.
+ */
 @WebServlet("/mailInfo")
 public class MailServlet extends HttpServlet {
+	
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
+	/**
+	 * Instantiates a new mail servlet.
+	 */
 	public MailServlet() {
 		super();
 	}
 
+	/**
+	 * Do get.
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @throws ServletException the servlet exception
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
+	/**
+	 * Do post.
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @throws ServletException the servlet exception
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
@@ -40,7 +65,7 @@ public class MailServlet extends HttpServlet {
 				StringBuilder emailTxtSB = new StringBuilder();
 
 				emailTxtSB.append("<h3>Hi, <b>" + request.getParameter("name")
-						+ "</b>!</h3> <br/> <h4>It is a pleasure to meet you. Let me introduce myself: <br/><br/><br/> I'm Carlos Pinho, a Braziian Independent <bold>Java Developer</bold> and <bold>Software Engineering Student</bold></h4> <br>");
+						+ "</b>!</h3> <br/> <h4>It is a pleasure to meet you. Let me introduce myself: <br/><br/><br/> I'm Carlos Pinho, a Brazilian Independent <bold>Java Developer</bold> and <bold>Software Engineering Student</bold></h4> <br>");
 				emailTxtSB.append(
 						"<h4>I suppose you much probably have already seen my <b><a target=\"_blank\" href = \"CarlosLaurine.github.io\" style=\"color: #dc143c; text-decoration: none; \"> Personal Page </a></b>, so let's step up to some Additional Info:</h4>  <br>");
 				emailTxtSB.append("<h4>You are now receiving Access to my Portfolio!</h4><br>");
@@ -57,16 +82,16 @@ public class MailServlet extends HttpServlet {
 				// Setting Virtual Signature at the Email Footer
 
 				emailTxtSB.append(
-						"<b><span style=\"font-size:12px\">Att.: Carlos Laurine - Java Web Fullstack Developer</span></b><br/>");
+						"<b><span style=\"font-size:12px\">Att.: Carlos Laurine - Java Web Independent Developer</span></b><br/>");
 				emailTxtSB.append("<b><span style=\"font-size:12px\">Contact Number - +55 (71) 99318-7816 </span></b><br/><br/>");
 
 				emailTxtSB.append("Sent to you by JavaMail 1.6.2");
 
 				EmailForwarder forwarder = new EmailForwarder(request.getParameter("email"),
-						"Carlos Laurine - Freelancer Java Web Fullstack Dev", "Java Web Fullstack Developer's Page",
+						"Carlos Laurine - Freelancer Java Web Independent Dev", "Java Web Fullstack Developer's Page",
 						emailTxtSB.toString());
 				forwarder.sendEmail(true);
-				msgMail="Email Succesfully Sent! I'll be in touch Soon!";
+				msgMail="Email Succesfully Sent! Go check your Mailbox";
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -103,7 +128,7 @@ public class MailServlet extends HttpServlet {
 						request.getParameter("name"), request.getParameter("subject"), emailTxtSB.toString());
 				forwarder.sendEmail(true);
 				
-				msgMail="Email Succesfully Sent! Go check your Mailbox";
+				msgMail="Email Succesfully Sent! I'll be in touch Soon!";
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -118,4 +143,5 @@ public class MailServlet extends HttpServlet {
 		rd.forward(request, response);
 		
 	}
+	
 }

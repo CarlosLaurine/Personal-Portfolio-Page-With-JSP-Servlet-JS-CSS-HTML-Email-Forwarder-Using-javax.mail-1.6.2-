@@ -33,7 +33,7 @@
 			<div class="logo">
 				<a href="#">Portfo<span>lio</span></a>
 			</div>
-			<div class="menu" style="text-align: center; color:#FFF; color: crimson;font-size: 18px;font-weight: 500; line-height: 24px;background:rgb(229, 252, 252); padding:1.5em; border-radius: 1.5em; font-family: 'Poppins', sans-serif;"><%= (request.getAttribute("mailMsg")==null)?"":request.getAttribute("mailMsg") %></div>
+			<div class="menu" style="text-align: center; color:#FFF; color: crimson;font-size: 18px;font-weight: 500; line-height: 24px;background:rgb(229, 252, 252); padding:1em; border-radius: 1.5em; font-family: 'Poppins', sans-serif; margin-right: -1em;"><%= (request.getAttribute("mailMsg")==null)?"":request.getAttribute("mailMsg") %></div>
 			<ul class="menu">
 				<li><a href="#home" class="menu-btn">Home</a></li>
 				<li><a href="#about" class="menu-btn">About</a></li>

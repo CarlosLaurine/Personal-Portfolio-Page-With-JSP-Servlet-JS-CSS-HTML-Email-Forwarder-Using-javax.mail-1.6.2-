@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"email_forwarder","l":"EmailForwarder"},{"p":"email_forwarder","l":"EmailForwarderStructureForTests"},{"p":"servlets","l":"MailServlet"}]
