@@ -67,14 +67,14 @@ public class MailServlet extends HttpServlet {
 				emailTxtSB.append("<h3>Hi, <b>" + request.getParameter("name")
 						+ "</b>!</h3> <br/> <h4>It is a pleasure to meet you. Let me introduce myself: <br/><br/><br/> I'm Carlos Pinho, a Brazilian Independent <bold>Java Developer</bold> and <bold>Software Engineering Student</bold></h4> <br>");
 				emailTxtSB.append(
-						"<h4>I suppose you much probably have already seen my <b><a target=\"_blank\" href = \"CarlosLaurine.github.io\" style=\"color: #dc143c; text-decoration: none; \"> Personal Page </a></b>, so let's step up to some Additional Info:</h4>  <br>");
+						"<h4>I suppose you much probably have already seen my <b><a target=\"_blank\" href = \"https://carloslaurinedev.com\" style=\"color: #dc143c; text-decoration: none; \"> Personal Page </a></b>, so let's step up to some Additional Info:</h4>  <br>");
 				emailTxtSB.append("<h4>You are now receiving Access to my Portfolio!</h4><br>");
 				emailTxtSB.append(
-						"<a target=\"_blank\" href = \"https://pdfhost.io/v/poS2vqMxr_SEBRAE_Certificatepdf.pdf\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Resume </a> ");
+						"<a target=\"_blank\" href = \"https://drive.google.com/file/d/13-644VHLbzkLi0b7HYpTcnNJ4GakvNPF/view?usp=sharing\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Resume </a> ");
 				emailTxtSB.append(
 						"<a target=\"_blank\" href = \"https://www.linkedin.com/in/carlos-laurine-a58267144\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my LinkedIn </a><br/><br/> ");
 				emailTxtSB.append(
-						"<a target=\"_blank\" href = \"CarlosLaurine.github.io\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my GitHub </a>");
+						"<a target=\"_blank\" href = \"https://github.com/CarlosLaurine\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my GitHub </a>");
 				
 				emailTxtSB.append(
 						"<a target=\"_blank\" href = \"https://www.instagram.com/cv_laurine/?hl=pt-br\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Instagram </a><br/><br/><br/>");
