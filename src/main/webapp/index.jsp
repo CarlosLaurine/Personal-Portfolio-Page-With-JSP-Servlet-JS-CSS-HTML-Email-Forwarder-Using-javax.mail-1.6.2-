@@ -70,14 +70,14 @@
 			<h2 class="title">About me</h2>
 			<div class="about-content">
 				<div class="column left">
-					<img src="images/logo-ucsal.png" alt="Catholic University of Salvador Logo" style="margin-top: -2em; margin-bottom: 3em;">
-					<img src="images/java-logo.png" alt="Java Vintage Cup Logo">
+					<img src="images/logo-ucsal1.png" alt="Catholic University of Salvador Logo" style="margin-top: -2em; margin-bottom: 3em; height: 650px;">
+				
 				</div>
 				<div class="column right">
-					<div class="text">
-						I'm Carlos and I'm a <span class="typing-2"></span>
+					<div class="text" style="width: 30em;;">
+						I'm Carlos and I'm a <br/> <span class="typing-2"></span>
 					</div>
-					<p>I am currently a Sophomore Student of Software Engineering at the Catholic University of Salvador (UCSAL). 
+					<p style="margin-top: 3em;">I am currently a Sophomore Student of Software Engineering at the Catholic University of Salvador (UCSAL). 
 					   This specific Course is well-known for its heavily-focused Teaching Guidelines directed towards at Java Development. 
 					   Most of my Subjects are taught in Java, and most of my Tests and Team Projects require it too! This has brought me a 
 					   lot of experience and self-confidence on designing and building Back End/Full Stack applications during my Undergrad 
@@ -104,7 +104,7 @@
 				    <p>That being said, all of these past and present backgrounds were more thoroughly depicted at my CV, with Demo 
 				       Independent Projects and further Academic Information. </p>   
 					<a href="https://carloslaurine.github.io/" target="_blank">Visit my Name Card</a>
-					<a href="Carlos Laurine Dev Resume (7).pdf" download="Carlos Laurine Dev (Resume/Portfolio)" target="_blank">Download my CV</a>
+					<a href="Carlos Laurine Dev (Resume_Portfolio).pdf" download="Carlos Laurine Dev (Resume/Portfolio)" target="_blank">Download my CV</a>
 				</div>
 			</div>
 		</div>
@@ -257,7 +257,7 @@
 			<div class="contact-content">
 				<div class="column left">
 					<div class="text">Get in Touch</div>
-					<p>Please feel free to contact me through my mailbox using the "Message Me" section right here, or to use my personal info below to reach out to me in the best way possible. You can also get a Custom Mail with some Additional Info Links from me by fulfilling the last section on the right with your Name and E-mail! It's as easy as that!</p>
+					<p>Please feel free to contact me through my mailbox using the "Message Me" section right here. You can also get a Custom Mail from me with some Additional Info Links by fulfilling the last section below with your Name and E-mail. It's as easy as that!</p>
 					<div class="icons">
 						<div class="row">
 							<i class="fas fa-user"></i>
@@ -287,10 +287,10 @@
 								<div class="sub-title">vitorlaurinepinho@gmail.com</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
-				<div class="column right" style="margin-top: -6em;">
-					<div class="text">Message Me</div>
+				<div class="column right" style="margin-top: 2em;">
 					<form class="contact-form" action="mailInfo?action=send"
 						method="post">
 
@@ -321,10 +321,8 @@
 			</div>
 
 
-			<div class="contact-content" style="margin-top: -7em;">
-				<div class="column left"></div>
-				<div class="column right" style="float: both">
-					<div class="text">Get a Custom E-mail from Me</div>
+			<div class="contact-content" >
+				<div class="column right" style="float: both; ">
 					<form class="contact-form" action="mailInfo?action=receive"
 						method="post">
 
@@ -339,7 +337,7 @@
 							</div>
 						</div>
 						<div class="button-area">
-							<button class="send-msg" type="submit" name="send">Get
+							<button class="send-msg" type="submit" name="send">Get Custom
 								Mail</button>
 						</div>
 					</form>
@@ -360,23 +358,7 @@
 
 				<div class="card">
 					<div class="box">
-						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="box">
-						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="box">
-						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
-					</div>
-				</div>	
-				
-				<div class="card" style="margin-top:2.1em;">
-					<div class="box">
-						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+						<div class="text"><a href="https://contact-agenda.carloslaurinedev.com/" style="color: #FFF" target="_blank">Contact Agenda</a></div>
 					</div>
 				</div>
 				
@@ -386,9 +368,30 @@
 					</div>
 				</div>
 				
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://user-register.carloslaurinedev.com/" style="color: #FFF" target="_blank">User Register (Under Development)</a></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://scupp.github.io/scuppoficial/" style="color: #FFF" target="_blank">Scupp! Startup Landing Page</a></div>
+					</div>
+				</div>	
+				
+			
+				
+			
+				
 				<div class="card" style="margin-top:2.1em;">
 					<div class="box">
-						<div class="text"><a href="https://google.com" style="color: #FFF" target="_blank">Contact Agenda</a></div>
+						<div class="text"><a href="https://github.com/CarlosLaurine/SpringBoot2-JavaEE11-DemoProject" style="color: #FFF" target="_blank">Commercial Order Register API (Demo Heroku Request Link at Readme.md)</a></div>
+					</div>
+				</div>
+				
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<div class="text"><a href="https://carloslaurinedev-dssales.netlify.app/" style="color: #FFF" target="_blank">DS Sales App</a></div>
 					</div>
 				</div>
 				

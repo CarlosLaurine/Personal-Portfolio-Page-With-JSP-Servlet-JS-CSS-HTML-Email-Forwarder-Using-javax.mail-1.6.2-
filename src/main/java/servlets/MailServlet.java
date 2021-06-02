@@ -17,7 +17,7 @@ import email_forwarder.EmailForwarder;
  */
 @WebServlet("/mailInfo")
 public class MailServlet extends HttpServlet {
-	
+
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
@@ -31,10 +31,10 @@ public class MailServlet extends HttpServlet {
 	/**
 	 * Do get.
 	 *
-	 * @param request the request
+	 * @param request  the request
 	 * @param response the response
 	 * @throws ServletException the servlet exception
-	 * @throws IOException Signals that an I/O exception has occurred.
+	 * @throws IOException      Signals that an I/O exception has occurred.
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -45,17 +45,17 @@ public class MailServlet extends HttpServlet {
 	/**
 	 * Do post.
 	 *
-	 * @param request the request
+	 * @param request  the request
 	 * @param response the response
 	 * @throws ServletException the servlet exception
-	 * @throws IOException Signals that an I/O exception has occurred.
+	 * @throws IOException      Signals that an I/O exception has occurred.
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		String action = request.getParameter("action");
 		String msgMail = "";
-			
+
 		if (action.equals("receive")) {
 			// First, verify the SMTP settings of the test email account
 
@@ -70,12 +70,12 @@ public class MailServlet extends HttpServlet {
 						"<h4>I suppose you much probably have already seen my <b><a target=\"_blank\" href = \"https://carloslaurinedev.com\" style=\"color: #dc143c; text-decoration: none; \"> Personal Page </a></b>, so let's step up to some Additional Info:</h4>  <br>");
 				emailTxtSB.append("<h4>You are now receiving Access to my Portfolio!</h4><br>");
 				emailTxtSB.append(
-						"<a target=\"_blank\" href = \"https://drive.google.com/file/d/13-644VHLbzkLi0b7HYpTcnNJ4GakvNPF/view?usp=sharing\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Resume </a> ");
+						"<a target=\"_blank\" href = \"https://drive.google.com/file/d/14cANkgL1XbkRoQA47f5LtW3NR9Op0P2l/view?usp=sharing\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Resume </a> ");
 				emailTxtSB.append(
 						"<a target=\"_blank\" href = \"https://www.linkedin.com/in/carlos-laurine-a58267144\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my LinkedIn </a><br/><br/> ");
 				emailTxtSB.append(
 						"<a target=\"_blank\" href = \"https://github.com/CarlosLaurine\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my GitHub </a>");
-				
+
 				emailTxtSB.append(
 						"<a target=\"_blank\" href = \"https://www.instagram.com/cv_laurine/?hl=pt-br\" style=\"color: #2525a7; padding:14px 25px; text-align: center; text-decoration: none; display: inline-block; border-radius:15px; font-size:25px; font-family:courier; border: 4px solid black; background-color:#dc143c \"> Access my Instagram </a><br/><br/><br/>");
 
@@ -83,7 +83,8 @@ public class MailServlet extends HttpServlet {
 
 				emailTxtSB.append(
 						"<b><span style=\"font-size:12px\">Att.: Carlos Laurine - Java Web Independent Developer</span></b><br/>");
-				emailTxtSB.append("<b><span style=\"font-size:12px\">Contact Number - +55 (71) 99318-7816 </span></b><br/><br/>");
+				emailTxtSB.append(
+						"<b><span style=\"font-size:12px\">Contact Number - +55 (71) 99318-7816 </span></b><br/><br/>");
 
 				emailTxtSB.append("Sent to you by JavaMail 1.6.2");
 
@@ -91,14 +92,13 @@ public class MailServlet extends HttpServlet {
 						"Carlos Laurine - Freelancer Java Web Independent Dev", "Java Web Fullstack Developer's Page",
 						emailTxtSB.toString());
 				forwarder.sendEmail(true);
-				msgMail="Email Succesfully Sent! Go check your Mailbox";
+				msgMail = "Email Succesfully Sent! Go check your Mailbox";
 
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
-				msgMail="Invalid Mail Address! Please Re-Insert your Info";
-				
-				
+				msgMail = "Invalid Mail Address! Please Re-Insert your Info";
+
 			}
 
 		}
@@ -127,21 +127,21 @@ public class MailServlet extends HttpServlet {
 				EmailForwarder forwarder = new EmailForwarder("vitorlaurinepinho@gmail.com",
 						request.getParameter("name"), request.getParameter("subject"), emailTxtSB.toString());
 				forwarder.sendEmail(true);
-				
-				msgMail="Email Succesfully Sent! I'll be in touch Soon!";
+
+				msgMail = "Email Succesfully Sent! I'll be in touch Soon!";
 
 			} catch (Exception e) {
 				e.printStackTrace();
 				System.out.println(e.getMessage());
-				msgMail="Invalid Mail Address! Please Re-Insert your Info";
+				msgMail = "Invalid Mail Address! Please Re-Insert your Info";
 			}
 
 		}
-		
+
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		request.setAttribute("mailMsg", msgMail);
 		rd.forward(request, response);
-		
+
 	}
-	
+
 }
