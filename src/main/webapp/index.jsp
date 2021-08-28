@@ -379,9 +379,6 @@
 					</div>
 				</div>	
 				
-			
-				
-			
 				
 				<div class="card" style="margin-top:2.1em;">
 					<div class="box">
@@ -394,11 +391,22 @@
 						<div class="text"><a href="https://carloslaurinedev-dssales.netlify.app/" style="color: #FFF" target="_blank">DS Sales App</a></div>
 					</div>
 				</div>
-				
-				
-				
-				
-				
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://scupp.github.io/scuppoficial/" style="color: #FFF" target="_blank"></a></div>
+					</div>
+				</div>	
+				<div class="card" style="margin-top:2.1em;">
+					<div class="box">
+						<div class= "text"><a href="https://github.com/CarlosLaurine/Complete-DS-Catalog-App" style="color: #FFF" target="_blank">DS Catalog (Spring-React Fullstack Project)</a></div>
+					</div>
+				</div>	
+				<div class="card">
+					<div class="box">
+						<div class="text"><a href="https://scupp.github.io/scuppoficial/" style="color: #FFF" target="_blank"></a></div>
+					</div>
+				</div>	
+
 			</div>	
 		</div>
 		
